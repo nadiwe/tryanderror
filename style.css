@@ -1,0 +1,113 @@
+@font-face {
+    font-family: 'PP Formula Condensed';
+    src:
+        url(font/PPFormulaCondensed-Regular.woff) format("woff2"),
+}
+
+@font-face {
+    font-family: 'PP Neue Bit';
+    src:
+        url(font/PPFormulaCondensed-Regular.woff2) format("woff"),
+}
+
+body {
+    margin: 0;
+}
+
+.focus {
+    position: fixed;
+    width: 197px;
+    height: 471px;
+    left: 30px;
+    top: 0px;
+    background: rgb(121 1 101);
+    opacity: 64%;
+    mix-blend-mode: color-burn;
+    border-radius: 45px;
+    transform: rotate(-90deg);
+}
+
+.grain {
+    position: fixed;
+    width: 3000px;
+    height: 2150px;
+    left: -940px;
+    top: -436px;
+
+    mix-blend-mode: soft-light;
+    opacity: 0.2;
+}
+
+.radial {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(113.23% 52.23% at 20.74% 49.12%, rgba(11, 54, 137, 0) 0%, rgba(33, 0, 233, 0.209948) 0.01%, rgba(250, 250, 250, 0.520833) 10.42%, rgba(0, 0, 0, 0.260417) 31.79%, #0000FF 76.55%, rgba(0, 0, 0, 0.692451) 99.98%, rgba(102, 109, 174, 0.820743) 99.99%, rgba(0, 0, 0, 0.520833) 100%);
+    background-blend-mode: soft-light;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+#overview {
+
+    position: fixed;
+
+    position: absolute;
+    width: 319px;
+    height: 811px;
+    top: 109px;
+    overflow-y: scroll;
+    overflow: hidden;
+
+}
+
+.container.y {
+    width: 256px;
+    height: 256px;
+    flex-flow: column nowrap;
+}
+
+.y.mandatory-scroll-snapping {
+    scroll-snap-type: y mandatory;
+}
+
+.container>div {
+    text-align: center;
+    scroll-snap-align: center;
+    flex: none;
+}
+
+.y.container>div {
+    line-height: 256px;
+    font-size: 128px;
+    width: 256px;
+    height: 100%;
+}
+
+/* appearance fixes */
+.y.container>div:first-child {
+    line-height: 1.3;
+    font-size: 64px;
+}
+
+/* coloration */
+.container>div:nth-child(even) {
+    background-color: #87ea87;
+}
+
+.container>div:nth-child(odd) {
+    background-color: #87ccea;
+}
+
+h1 {
+    font-family: 'PP NeueBit';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 83px;
+    line-height: 100px;
+    color: blue;
+}
