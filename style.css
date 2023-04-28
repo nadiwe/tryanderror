@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'PP Formula Condensed';
     src:
-        url(./font/PPFormulaCondensed-Regular.otf) format("woff2"),
+        url(./font/PPFormulaCondensed-Regular.woff) format("woff"),
 
 }
 
