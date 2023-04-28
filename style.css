@@ -1,15 +1,12 @@
 @font-face {
     font-family: 'PP Formula Condensed';
     src:
-        url(font/PPFormulaCondensed-Regular.woff2) format("woff2"),
+        url(./font/PPFormulaCondensed-Regular.woff2) format("woff2"),
 
 }
 
-@font-face {
-    font-family: 'PP Neue Bit';
-    src:
-        url(font/PPFormulaCondensed-Regular.woff2) format("woff"),
-}
+
+
 
 body {
     margin: 0;
