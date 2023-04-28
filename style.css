@@ -17,8 +17,14 @@
 
 body {
     margin: 0;
-
     font-family: 'Formula Condensed', sans-serif;
+    color: rgb(39, 39, 39);
+
+}
+
+a {
+    text-decoration: none;
+    color: rgb(39, 39, 39);
 
 }
 
@@ -64,22 +70,19 @@ body {
 
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
+
+    padding: 0px 10px;
 
     position: absolute;
     width: 369px;
-    left: 12px;
-    top: 24px;
     overflow: hidden;
 
-    background: none;
 }
 
 hr {
     width: 100%;
     margin: 0;
-    border: 2px solid #000000;
+    border: 2px solid;
 }
 
 section {
@@ -116,19 +119,62 @@ h1 {
     font-style: normal;
     font-weight: 700;
     font-size: 49px;
-    color: rgb(27, 27, 27);
     margin: 0px;
+}
 
+h2 {
+    margin: 0;
+    font-size: 34px;
+}
 
+h3 {
+    font-family: 'DIN 2014';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+
+    margin: 0 0 12px 0;
+}
+
+.titel {
+    position: fixed;
+}
+
+.inhalt {
+    height: 76vh;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
 }
 
 .menu {
-    position: absolute;
+    position: fixed;
     bottom: 0px;
-    width: 100vw;
+    width: 20px;
     height: 48px;
 }
 
 .menu hr {
     margin: revert;
+}
+
+.impression {
+    object-fit: cover;
+    width: 100%;
+}
+
+.column {
+    flex: 1;
+
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 76vw;
+    }
+
+    .inhalt {
+        flex-direction: row;
+    }
 }
