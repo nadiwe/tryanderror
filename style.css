@@ -17,7 +17,9 @@
 
 body {
     margin: 0;
-    font-family: 'PP Formula Condensed';
+
+    font-family: 'Formula Condensed', sans-serif;
+
 }
 
 
@@ -99,7 +101,7 @@ section {
 }
 
 h1 {
-    font-family: 'PP Formula Condensed';
+    font-family: 'Formula Condensed';
     font-style: normal;
     font-weight: 700;
     font-size: 29px;
